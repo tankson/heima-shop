@@ -18,13 +18,13 @@
         </view>
 
         <!-- 右边的内容 -->
-        <!-- <view class="right"> -->
+        <view class="right">
             <!-- 子分类 -->
-            <!-- <block wx:for="{{ list[current].children }}" wx:key="index">
+            <block wx:for="{{ list[current].children }}" wx:key="index">
                 <view class="category-list">
                     <view class="category-title">
                         / <text>{{item.cat_name}}</text> /
-                    </view> -->
+                    </view>
 
                     <!-- <view class="product-list"> -->
                         <!-- 品牌分类列表 -->
@@ -38,9 +38,9 @@
                                 <view>{{ subItem.cat_name }}</view>
                             </navigator>
                         </block> -->
-                    <!-- </view>
+                    <!-- </view> -->
                 </view>
             </block>
-        </view> -->
+        </view> 
     </view>
 </view>
