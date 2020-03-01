@@ -3,11 +3,11 @@
     <search/>
     
     <!-- 内容部分 -->
-    <!-- <view class="content"> -->
+    <view class="content">
         <!-- 左边的菜单 -->
-        <!-- <view class="left"> -->
+        <view class="left">
             <!-- 菜单的子选项 -->
-            <!-- <block wx:for="{{list}}" wx:key="index">
+            <block wx:for="{{list}}" wx:key="index">
                 <view 
                 class="menu-item {{ current === index ? 'active' : '' }}" 
                 bindtap="handleClick" 
@@ -15,7 +15,7 @@
                     {{item.cat_name}}
                 </view>
             </block>
-        </view> -->
+        </view>
 
         <!-- 右边的内容 -->
         <!-- <view class="right"> -->
@@ -41,6 +41,6 @@
                     <!-- </view>
                 </view>
             </block>
-        </view>
-    </view> -->
+        </view> -->
+    </view>
 </view>
