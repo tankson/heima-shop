@@ -26,9 +26,9 @@
                         / <text>{{item.cat_name}}</text> /
                     </view>
 
-                    <!-- <view class="product-list"> -->
+                    <view class="product-list">
                         <!-- 品牌分类列表 -->
-                        <!-- <block 
+                        <block 
                         wx:for="{{ item.children }}" 
                         wx:key="index" 
                         wx:for-item="subItem"
@@ -37,8 +37,8 @@
                                 <image mode="widthFix" src="{{ subItem.cat_icon }}"></image>
                                 <view>{{ subItem.cat_name }}</view>
                             </navigator>
-                        </block> -->
-                    <!-- </view> -->
+                        </block>
+                    </view>
                 </view>
             </block>
         </view> 
