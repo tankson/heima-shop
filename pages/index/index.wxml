@@ -26,25 +26,25 @@
     </swiper>
 
     <!-- 中间的导航菜单 -->
-    <!-- <view class="menus">
+    <view class="menus">
         <block wx:for="{{menus}}" wx:key="index">
             <navigator url="{{item.url}}" open-type="{{item.open_type}}">
                 <image src="{{item.image_src}}" mode="aspectFill"></image>
             </navigator>
         </block>
-    </view> -->
+    </view>
 
 
     <!-- 楼层布局 -->
-    <!-- <view class="floor"
+    <view class="floor"
     wx:for="{{floors}}"
-    wx:key="index"> -->
+    wx:key="index">
         <!-- 楼层头部 -->
-        <!-- <image
+        <image
         class="floor-title" 
         mode="aspectFill"
         src="{{item.floor_title.image_src}}">
-        </image> -->
+        </image>
 
         <!-- 楼层内容 -->
         <view class="floor-content">
