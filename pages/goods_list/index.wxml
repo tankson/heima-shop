@@ -1,0 +1,6 @@
+<view class="container">
+    <!-- 搜索组件 -->
+    <search keyword="{{keyword}}" background="search" align="left"/>
+
+   
+</view>

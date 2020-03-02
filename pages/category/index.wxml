@@ -34,7 +34,7 @@
                         wx:for-item="subItem"
                         wx:for-index="subIndex">
                             <navigator url="">
-                                <image mode="widthFix" src="{{ subItem.cat_icon }}"></image>
+                                <image mode="aspectFill" src="{{ subItem.cat_icon }}"></image>
                                 <view>{{ subItem.cat_name }}</view>
                             </navigator>
                         </block>
