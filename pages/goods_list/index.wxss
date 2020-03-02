@@ -3,3 +3,10 @@
     background: rgba(239, 239, 239)!important;
 }
 
+.tab{
+    padding:20rpx;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px #eee solid;
+}
+
