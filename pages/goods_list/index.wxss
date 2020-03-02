@@ -22,3 +22,28 @@
     height: 200rpx;
     flex-shrink: 0;
 }
+
+.goods-item-right{
+    flex: 1;
+    padding-left: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.goods-title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.price{
+    color:red;
+    font-size: 22px;
+}
+
+.price text{
+    font-size: 12px;
+}
+
