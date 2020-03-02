@@ -9,4 +9,18 @@
             <text wx:if="{{index === 2}}" class="iconfont iconpaixu"></text>
         </view>
     </view>
+
+    <!-- 商品列表 -->
+    <view class="list">
+        <block wx:for="{{goods}}" wx:key="index">
+            <navigator url="" class="goods-item">
+                <image mode="aspectFill" src="{{item.goods_small_logo}}"></image>
+
+                <view class="goods-item-right">
+                    <view class="goods-title">{{item.goods_name}}</view>
+                    <view class="price"><text>￥</text>{{item.goods_price}}</view>
+                </view>
+            </navigator>
+        </block>
+    </view>
 </view>

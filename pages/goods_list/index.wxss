@@ -10,3 +10,15 @@
     border-bottom: 1px #eee solid;
 }
 
+.goods-item{
+    padding: 20rpx;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px #eee solid;
+}
+
+.goods-item image{
+    width: 200rpx;
+    height: 200rpx;
+    flex-shrink: 0;
+}
