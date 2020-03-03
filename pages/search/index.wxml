@@ -5,10 +5,12 @@
             <view class="search-input">
                 <icon type="search" size="20"/>
                 <input 
+                 bindinput="handleInput"
                 placeholder="请输入您想要的商品">
                 </input>
             </view>
             <view
+             wx:if="{{inputValue}}" 
              class="cancel-button">取消</view>
         </view>
     </view>
