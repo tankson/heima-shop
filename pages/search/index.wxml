@@ -12,4 +12,25 @@
              class="cancel-button">取消</view>
         </view>
     </view>
+
+
+
+     <!-- 历史搜索 -->
+    <view class="history-title">
+        <view class="title-header">历史搜索</view>
+        <icon type="clear" size="20">
+        </icon>
+    </view>
+
+    <!-- 历史搜索列表 -->
+    <view class="history-list">
+       <view class="history-item">小小</view>
+       <view class="history-item">小小小</view>
+       <view class="history-item">小小小小</view>
+       <view class="history-item">小小小小小</view>
+       <view class="history-item">小小小小小小</view>
+    </view>
+
+
+
 </view>
