@@ -9,6 +9,25 @@
     height: 60rpx;
     position: relative;
 }
+.recommend{
+    position: absolute;
+    left: 0rpx;
+    top:60rpx;
+    background:#fff;
+    width: 100%;
+    padding: 20rpx;
+    box-sizing: border-box;
+    border:1px red solid;
+    height: 50vh;
+    overflow: auto;
+}
+
+.recommend navigator{
+    line-height: 2;
+    border-bottom: 1px #eee solid;
+    font-size:14px;
+}
+
 
 .search-input{
     flex: 1;
