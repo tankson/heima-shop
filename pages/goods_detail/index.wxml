@@ -1,0 +1,37 @@
+<view class="container">
+
+    <!-- 轮播图 -->
+    <swiper 
+    indicator-dots 
+    class="swiper"
+    >
+        <block wx:for="{{detail.pics}}" wx:key="index">
+            <swiper-item>
+                <image 
+                mode="aspectFill" 
+                src="{{item.pics_big}}" 
+                bindtap="handlePreview"
+                data-index="{{index}}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <!-- 商品信息 -->
+    <view class="info-wrapper">
+        <view class="price">￥{{detail.goods_price}}</view>
+
+        <view class="goods_info">
+            <view class="goods_title">
+                {{detail.goods_name}}
+            </view>
+            <view class="goods_star">
+                <view class="iconfont icon-shoucang"></view>
+                <text>收藏</text>
+            </view>
+        </view>
+
+        <view class="goods_other">快递：免运费</view>
+    </view>
+
+   
+</view>
