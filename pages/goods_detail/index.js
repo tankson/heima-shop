@@ -61,5 +61,12 @@ Page({
     })
   },
 
+  // 跳转到购物车页
+  handleToCart() {
+    wx.switchTab({
+      url: '/pages/cart/index',
+    })
+  }
+
   
 })
