@@ -68,6 +68,25 @@
         </view>
     </view>
 
+     <!-- 全选和总价格 -->
+    <view class="checkout">
+        <view class="allselect">
+            <icon type="success" color="red"></icon>
+            全选
+        </view>
+        <view class="allprice">
+            <view class="allprice-top">合计
+                <text>
+                    <text>￥</text>{{allPrice}}
+                </text>
+            </view>
+            <view class="allprice-btm">包含运费</view>
+        </view>
+        <view class="checkout-btn">
+            结算
+        </view>
+    </view>
+
    
 
    
