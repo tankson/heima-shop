@@ -32,7 +32,8 @@
 
         <view class="goods_other">快递：免运费</view>
     </view>
-     <!-- 商品详细信息的展示 -->
+
+    <!-- 商品详细信息的展示 -->
     <view class="tab">
         <view 
         class="tab-item {{ current === index ? 'active' : '' }}" 
@@ -59,7 +60,8 @@
         </view>
     </view>
 
-     <!-- 页脚的按钮，固定在底部 -->
+
+    <!-- 页脚的按钮，固定在底部 -->
     <view class="btns">
         <!-- 联系客服的按钮 -->
         <view class="contact">
@@ -77,9 +79,7 @@
             <text>购物车</text>
         </view>
 
-        <view class="btn-color">加入购物车</view>
-        <view class="btn-color">立即购买</view>
+        <view class="btn-color" bindtap="handleAddCart">加入购物车</view>
+        <view class="btn-color" bindtap="handleAddCart">立即购买</view>
     </view>
-
-   
 </view>

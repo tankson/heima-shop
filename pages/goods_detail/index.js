@@ -82,7 +82,7 @@ Page({
       // 存在就数量加一
       if (isExit) {
         v.number += 1;
-      
+        
         wx.showToast({
           title: '数量+1',
           icon: 'success'
@@ -111,7 +111,4 @@ Page({
     // 保存到本地
     wx.setStorageSync("goods", goods);
   }
-
-
-  
 })
