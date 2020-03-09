@@ -119,7 +119,6 @@ Page({
 
   // 按下回车按钮时候触发的事件
   handleEnter() {
-    
     // 每次存储之前先把本地的数据先获取回来
     let arr = wx.getStorageSync("history");
 

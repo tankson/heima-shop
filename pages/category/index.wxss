@@ -1,7 +1,6 @@
+/* 如果同时设置了top和bottom，该元素的高度取两个的距离 */
 .content{
-    position: fixed;
-    top: 100rpx;
-    bottom: 0;
+    height: calc(100vh - 100rpx);
     width: 750rpx;
     display: flex;
     justify-content: space-between
@@ -12,7 +11,7 @@
     width: 200rpx;
     height: 100%;
     background: #eee;
-    overflow: auto;
+    /* overflow: auto; */
     flex-shrink: 0;
 }
 
@@ -78,7 +77,6 @@
 }
 
 .product-list navigator image{
-    width: 120rpx;
+    width:120rpx;
     height: 120rpx;
-    
 }

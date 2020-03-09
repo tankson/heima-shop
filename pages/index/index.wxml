@@ -1,5 +1,5 @@
-<view class="container">
-   <!-- 引用搜索组件 -->
+<view class="container tab-page">
+    <!-- 引用搜索组件 -->
     <search/>
 
     <!-- 轮播图 -->
