@@ -73,7 +73,8 @@ Page({
     // 每次加入商品之前应该先判断本地有没有数据，如果没有就等于一个空数组
     const goods = wx.getStorageSync("goods") || [];
 
-  
+    // 判断当前的商品是否已经在goods的数组中
+    // 存在就数量加一，不存在就unshift
     // some循环数组，return的结果“只要有一个是true就会返回true”，反之就false
     const exit = goods.some(v => {
       // 通过id判断当前商品是否在本地的数组中
@@ -81,7 +82,7 @@ Page({
       // 存在就数量加一
       if (isExit) {
         v.number += 1;
-        
+        // 提示，文档地址https://developers.weixin.qq.com/miniprogram/dev/api/ui/interaction/wx.showToast.html
         wx.showToast({
           title: '数量+1',
           icon: 'success'
@@ -98,7 +99,8 @@ Page({
         goods_name: this.data.detail.goods_name,
         goods_price: this.data.detail.goods_price,
         goods_small_logo: this.data.detail.goods_small_logo,
-        number: 1
+        number: 1, // 默认数量为1
+        select: true // 默认是选中的状态
       })
 
       wx.showToast({

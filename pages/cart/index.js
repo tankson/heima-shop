@@ -30,7 +30,8 @@ Page({
     if (typeof this.getTabBar === 'function' &&
       this.getTabBar()) {
       this.getTabBar().setData({
-        selected: 2
+        selected: 2,
+        cartCount: (wx.getStorageSync('goods') || []).length
       })
     }
 
@@ -48,6 +49,7 @@ Page({
 
   // 获取收货地址
   handleGetAddress() {
+    // 获取收货地址的文档：https://developers.weixin.qq.com/miniprogram/dev/api/open-api/address/wx.chooseAddress.html
     wx.chooseAddress({
       success: (res) => {
         // 把收货地址保存到data
@@ -99,6 +101,7 @@ Page({
 
     // 判断如果数量为0时候，提示用户是否删除商品
     if (this.data.goods[index].number === 0) {
+      // 弹窗，文档地址：https://developers.weixin.qq.com/miniprogram/dev/api/ui/interaction/wx.showModal.html
       wx.showModal({
         title: '提示',
         content: '是否删除商品',
@@ -115,7 +118,18 @@ Page({
           // 重新修改data的goods的值
           this.setData({
             goods: this.data.goods
-          })
+          });
+
+          // 修改tabbar购物车的数量
+          if (typeof this.getTabBar === 'function' &&
+            this.getTabBar()) {
+            this.getTabBar().setData({
+              cartCount: (wx.getStorageSync('goods') || []).length
+            })
+          }
+
+          // 计算总价格
+          this.handleAllPrice();
         }
       })
     }
